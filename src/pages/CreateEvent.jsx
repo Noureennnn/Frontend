@@ -62,7 +62,7 @@ export const CreateEvent = () => {
     <input className="w-[1200px] h-[60px] p-[15px] rounded-[10px] text-[19px]"
     type="text"
     value={description}
-    placeholder="Enter Event title"
+    placeholder="Enter Event Description"
     id="title"
     onChange={(e) => setDescription(e.target.value)} /></div>
     <div className="grid grid-cols-3 gap-[150px]">
