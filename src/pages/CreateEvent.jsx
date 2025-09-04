@@ -86,15 +86,24 @@ export const CreateEvent = () => {
     /></div></div>
     <div className="grid grid-cols-3">
     <div className="flex flex-col"><p className="mt-[20px] mb-[5px]">Status </p>
-     <input className="w-[250px] p-[15px] rounded-[10px] ml-[0px] text-[19px]"
-    value={status}
-    placeholder="Enter Event Status"
-    onChange={(e)=> setStatus(e.target.value)} /></div>
+     <select className="w-[250px] p-[15px] rounded-[10px] ml-[0px] text-[19px]"
+        value={status}
+        onChange={(e)=>setStatus(e.target.value)}>
+        <option value="" disabled selected>Status</option>
+        <option value="Up-Coming">Up-Coming</option>
+        <option value="Pending">Pending</option>
+        <option value="Closed">Closed</option>
+        </select></div>
         <div className="flex flex-col ml-[50px]"><p className="mt-[20px] mb-[5px]">Popularity </p>
-     <input className="w-[250px] p-[15px] rounded-[10px] ml-[0px] text-[19px]"
-    value={popularity}
-    placeholder="Enter Event Popularity"
-    onChange={(e)=> setPopularity(e.target.value)} /></div></div>
+     <select className="w-[250px] p-[15px] rounded-[10px] ml-[0px] text-[19px]"
+        value={popularity}
+        onChange={(e)=>setPopularity(e.target.value)}>
+                    <option value="" disabled selected>Popularity</option>
+                    <option value="Unpopular">Unpopular</option>
+                    <option value="Neutral">Neutral</option>
+                    <option value="Popular">Popular</option>
+                    <option value="Highly Popular">Highly Popular</option>
+                    </select></div></div>
     <button type="submit" className="text-[white] bg-[#1A6291] p-[20px] float-end rounded-[15px] mr-[50px] mt-[0px] text-[20px] w-[200px] h-[60px] font-[poppins] font-[800] pt-[0] pb-[0] border-[#1A6291]">Create Event</button>
     </form></div>
 
