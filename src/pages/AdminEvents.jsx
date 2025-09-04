@@ -6,7 +6,7 @@ import "../assets/style.css";
 import { SideBar } from "../components/SideBar";
 import cash from "../assets/cash.jpg";
 import arrow from "../assets/arrow3.png";
-import Ticket from "../assets/ticket.png"
+import Ticket from "../assets/Ticket.png"
 import Seat from "../assets/Seat.png"
 import { Navbar } from "../components/Navbar";
 
