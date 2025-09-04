@@ -48,7 +48,7 @@ export const LocationsBarChart = () => {
           },
           y:{
             min:0,
-            max:30,
+            max:100,
             ticks:{stepSize:1,}
           },
 
