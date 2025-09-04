@@ -111,16 +111,25 @@ const handleDelete = async(e) => {
         /></div></div>
         <div className="grid grid-cols-3">
         <div className="flex flex-col"><p className="mt-[20px] mb-[5px]">Status </p>
-        <input className="w-[250px] p-[15px] rounded-[10px] ml-[0px] text-[19px]"
+        <select className="w-[250px] p-[15px] rounded-[10px] ml-[0px] text-[19px]"
         value={status}
-        id="seatsperrow"
-        onChange={(e)=> setStatus(e.target.value)}
-        /></div>
+        onChange={(e)=>setStatus(e.target.value)}>
+        <option value="" disabled selected>Status</option>
+        <option value="Up-Coming">Up-Coming</option>
+        <option value="Pending">Pending</option>
+        <option value="Closed">Closed</option>
+        </select></div>
         <div className="flex flex-col ml-[50px]"><p className="mt-[20px] mb-[5px]">Popularity </p>
-        <input className="w-[250px] p-[15px] rounded-[10px] ml-[0px] text-[19px]"
+        <select className="w-[250px] p-[15px] rounded-[10px] ml-[0px] text-[19px]"
         value={popularity}
-        onChange={(e)=> setPopularity(e.target.value)}
-        /></div>
+        onChange={(e)=>setPopularity(e.target.value)}>
+                    <option value="" disabled selected>Popularity</option>
+                    <option value="Unpopular">Unpopular</option>
+                    <option value="Neutral">Neutral</option>
+                    <option value="Popular">Popular</option>
+                    <option value="Highly Popular">Highly Popular</option>
+                    </select>
+        </div>
         </div>
         <button type="submit" className="text-[white] bg-[#CF730A] p-[20px] float-end rounded-[15px] mb-[0] mr-[50px] mt-[0px] text-[20px] w-[200px] h-[60px] font-[poppins] font-[800] pt-[0] pb-[0] border-[#CF730A] outline-none"
         >Save</button>
